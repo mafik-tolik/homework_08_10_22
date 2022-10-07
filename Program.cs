@@ -1,4 +1,8 @@
-﻿// Ex47();
+﻿Console.Clear();
+
+
+
+// Ex47();
 // Задача 47: Задайте двумерный массив размером m×n, заполненный случайными вещественными числами, округлёнными до одного знака.
 // m = 3, n = 4.
 // 0,5 7 -2 -0,2
@@ -37,7 +41,7 @@ void Ex47()
 
 
 
-Ex50();
+// Ex50();
 // Задача 50: Напишите программу, которая на вход принимает индексы элемента в двумерном массиве, 
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 // Например, задан массив:
@@ -54,24 +58,24 @@ void Ex50()
 
     int[,] numbers = new int[rows, columns];
 
-    // LibraryHelp.Methods.FillArray(numbers, -99, 99);
+    LibraryHelp.Methods.FillArray(numbers, -99, 99);
 
-    // Console.WriteLine("Введите индекс i:");
-    // int i = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите индекс i:");
+    int indexI = Convert.ToInt32(Console.ReadLine());
 
-    // Console.WriteLine("Введите индекс j:");
-    // int j = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите индекс j:");
+    int indexJ = Convert.ToInt32(Console.ReadLine());
 
-    // LibraryHelp.Methods.PrintArray(numbers);
+    LibraryHelp.Methods.PrintArray(numbers);
 
-    // if (i >= rows || j >= columns)
-    // {
-    //     Console.WriteLine($"Элемент с индексом ({i}, {j}) не существует в текущем массиве");
-    // }
-    // else
-    // {
-    //     Console.WriteLine($"Значение элемента с индексом ({i}, {j}) равно: {numbers[i, j]}");
-    // }
+    if (indexI >= rows || indexJ >= columns)
+    {
+        Console.WriteLine($"Элемент с индексом ({indexI}, {indexJ}) не существует в текущем массиве");
+    }
+    else
+    {
+        Console.WriteLine($"Значение элемента с индексом ({indexI}, {indexJ}) равно: {numbers[indexI, indexJ]}");
+    }
 }
 
 
